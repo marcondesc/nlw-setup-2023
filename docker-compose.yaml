@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  backend:
+    build: ./server
+    #command: wait-for db:3306 -t 40 -- ./start.sh
+    command: ./start.sh
+    ports:
+      - 8000:3000
+    volumes:
+      - ./server:/home/node/app
+#    depends_on:
+#      - db
+  
+#  db:
+#    image: mysql:5.7
+#    environment:
+#      - MYSQL_DATABASE=mydb
+#      - MYSQL_ROOT_PASSWORD=root
+#    volumes:
+#      - ./dbdata:/var/lib/mysql
+# efemero === passageiro
+# docker compose up -d

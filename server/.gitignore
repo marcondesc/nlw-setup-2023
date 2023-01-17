@@ -40,24 +40,18 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-server/node_modules/
-server/jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
-server/typings/
 
 # TypeScript cache
 *.tsbuildinfo
-server/*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
-server/.npm
 
 # Optional eslint cache
 .eslintcache
-server/.eslintcache
 
 # Microbundle cache
 .rpt2_cache/
