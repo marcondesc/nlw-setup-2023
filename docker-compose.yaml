@@ -6,7 +6,7 @@ services:
     #command: wait-for db:3306 -t 40 -- ./start.sh
     command: ./start.sh
     ports:
-      - 8000:3000
+      - 3333:3333
     volumes:
       - ./server:/home/node/app
 #    depends_on:
